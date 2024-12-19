@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- pattren [a-zA-Z]{3,8} -->
+
+
+    <table align="center">
+        <caption>Register form</caption>
+        <form action="">
+            <tr>
+                <td><label for="">Name  </label></td>
+                <!-- <td><input type="text" placeholder="Enter your name" value="" pattern="[a-zA-Z]+" required></td> -->
+                <td><input type="text" placeholder="Enter your name" value="" pattern="[a-zA-Z]{3,7}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Surname  </label></td>
+                <td><input type="text" placeholder="Enter your Surname"  pattern="[a-zA-Z]{3,7}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Email </label></td>
+                <!-- shubhamjadav12.tops@gmail.com -->
+                 <!-- [a-Z0-9.]+'@'+[a-z]+'.'+[a-z]{2,3}$ -->
+                <td><input type="email" placeholder="Enter your Email"  required></td>
+            </tr>
+            <tr>
+                <td><label for="">phone </label></td>
+                <!-- <td><input type="tel" placeholder="Enter your Phone" pattern="[0-9]+" required></td> -->
+                <!-- <td><input type="tel" placeholder="Enter your Phone" pattern="[0-9]{10}" maxlength="10" required></td> -->
+                <td><input type="tel" placeholder="Enter your Phone" pattern="[6789][0-9]{9}" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="">password </label></td>
+                <td><input type="password" placeholder="Enter your Password" pattern="[A-Z][a-zA-Z0-9@]{8,12}" required></td>
+            </tr>
+            <tr>
+                <td><label for="">Quntiy </label></td>
+                <td><input type="number" placeholder="Enter your qunity" max="6" min="1" required></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input  type="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
