@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li::first-letter {
+            background-color: red;
+        }
+        .main::first-line{
+            background-color: aqua;
+        }
+        .main::selection{
+            background-color: lightcoral;
+            color: white;
+        }
+
+        ul li::before{
+            content: "sasfd";
+            /* height: 100px;
+            width: 200px; */
+        }
+        ul li::after{
+            content: "asdb";
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+        <li>Home</li>
+    </ul>
+
+    <div class="main">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, saepe. Iusto quas voluptates dolorem facere
+        perspiciatis beatae, molestias placeat magni accusamus nobis cum molestiae voluptatum pariatur eligendi delectus
+        consectetur! Ea. loirem
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facilis odit, molestias error eligendi ipsam
+        repellat assumenda rerum possimus excepturi itaque cumque quas iste debitis, sapiente cum maxime blanditiis
+        aspernatur.
+    </div>
+</body>
+
+</html>
