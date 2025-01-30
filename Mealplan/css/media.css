@@ -22,6 +22,14 @@
     .meal-content .meal-p{
        width: 80%; 
     }
+    #Favorites .row {
+        flex-direction: column;
+        /* display: block; */
+    }
+    #Favorites .row .col{
+        width: 80%;
+        margin: 20px auto;
+    }
 
 
 }
