@@ -18,7 +18,7 @@
     <script>
         function check_blank() {
             let fname = document.getElementById("fname").value;
-            if (fname == "" || fname == null) {
+            if (fname == "" || fname == null) {``
                 document.getElementById("msg").innerText = "Enter firstname"
                 document.getElementById("fname").innerHTML = "<style>#fname{border :1px solid red}</style>"
                 return false;
