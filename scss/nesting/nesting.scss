@@ -1,0 +1,46 @@
+$bg-color:#f08080;
+$color : white;
+
+.nav{
+    list-style: none;
+    li{
+        display: inline-block;
+        background-color: $bg-color;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+            color: $color;
+           
+        }
+        &:hover{
+            background-color: aqua;      
+        }
+        &:hover a{
+            color: black;
+        }
+    }
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    li{
+        padding: 10px 20px;
+        background-color: black;
+        margin-right: 5px;
+        a{
+            color: $color;
+            text-decoration: none;
+            &::after{
+                content: "s";
+            }
+        }
+        @media only screen and (max-width:576px) {
+            background-color: blue;
+            border: 2px solid salmon;
+        }
+    }
+    @media only screen and (max-width:576px) {
+        flex-direction: column;
+    }
+}

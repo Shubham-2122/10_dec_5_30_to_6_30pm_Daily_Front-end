@@ -1,0 +1,6 @@
+@use 'base';
+@use 'footer';
+
+.h1{
+    background-color: base.$bg-color;
+}

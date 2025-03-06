@@ -1,0 +1,15 @@
+// $varible-name : varible-value
+$bg-color : red;
+$color : blue;
+$size : 50px;
+
+h1{
+    background-color: $bg-color;
+    color: $color;
+    font-size: $size;
+}
+h2{
+    background-color: $color;
+    color: $bg-color;
+    padding: $size;
+}

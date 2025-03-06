@@ -1,0 +1,46 @@
+.nav {
+  list-style: none;
+}
+.nav li {
+  display: inline-block;
+  background-color: #f08080;
+  padding: 10px 20px;
+}
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+.nav li:hover {
+  background-color: aqua;
+}
+.nav li:hover a {
+  color: black;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  padding: 10px 20px;
+  background-color: black;
+  margin-right: 5px;
+}
+.list li a {
+  color: white;
+  text-decoration: none;
+}
+.list li a::after {
+  content: "s";
+}
+@media only screen and (max-width: 576px) {
+  .list li {
+    background-color: blue;
+    border: 2px solid salmon;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .list {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=nesting.css.map */
