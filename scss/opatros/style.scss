@@ -1,0 +1,11 @@
+$font : 100px;
+$bg-color:red;
+$color : white;
+
+
+.main{
+    background-color: $bg-color;
+    color: $color;
+    padding: $font - 20px;
+    font-size: $font/4;
+}
