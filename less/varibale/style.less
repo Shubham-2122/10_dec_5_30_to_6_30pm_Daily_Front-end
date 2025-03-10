@@ -1,0 +1,18 @@
+@bg-color : red;
+@color : blue;
+@size : 100px;
+
+@height : @size - 50px;
+
+
+h1{
+    background-color: @bg-color;
+    color: @color;
+}
+
+h2{
+    background-color: @color;
+    color: @bg-color;
+    font-size: @height;
+    padding: @size;
+}

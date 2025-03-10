@@ -1,0 +1,21 @@
+h1 {
+  border: 5px solid red;
+}
+h2 {
+  border: 5px solid blue;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+}
+.main .box {
+  height: 200px;
+  width: 200px;
+  border: 5px solid red;
+}

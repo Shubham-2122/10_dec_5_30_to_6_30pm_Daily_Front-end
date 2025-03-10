@@ -1,0 +1,34 @@
+@bg-color : lightcoral;
+@color : white;
+
+.list{
+    li{
+        display: inline-block;
+        background-color: @bg-color;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+            color: @color;
+        }
+        &:hover{
+            background-color: black;
+        }
+        &:hover a{
+            color: blue;
+        }
+    }
+}
+
+.ulist{
+    display: flex;
+    list-style: none;
+    li {
+       background-color: @bg-color;
+       padding: 10px 20px;
+       margin-right: 5px;
+       a{
+        text-decoration: none;
+        color: @color;
+       }
+    }
+}

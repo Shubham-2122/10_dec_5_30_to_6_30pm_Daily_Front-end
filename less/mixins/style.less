@@ -1,0 +1,37 @@
+
+// mixins
+// with out
+.bordered(){
+    border: 5px solid red;
+}
+
+.border2(@size,@color){
+    border: @size solid @color;
+}
+
+.flex(@data){
+    display: flex;
+    justify-content: @data;
+}
+
+
+h1{
+    .bordered();
+}
+
+h2{
+    .border2(5px, blue);
+
+}
+
+.main{
+    .flex(space-between);
+    @media only screen and (max-width:768px) {
+        .flex(center);
+    }
+    .box{
+        height: 200px;
+        width: 200px;
+        .bordered();
+    }
+}
