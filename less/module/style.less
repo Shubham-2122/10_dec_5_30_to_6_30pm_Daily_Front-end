@@ -1,0 +1,8 @@
+@import "_data.less";
+
+
+@data : blue;
+
+h2{
+    color: if((iscolor(@data)),@data,green);
+}

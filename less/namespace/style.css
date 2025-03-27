@@ -1,0 +1,18 @@
+.btn {
+  background: linear-gradient(red, green);
+  border: 4px solid;
+  padding: 10px 20px;
+  color: white;
+}
+.btn:hover {
+  background: lightcoral;
+}
+.btn-data {
+  background: lightcoral;
+  border: 4px solid;
+  padding: 10px 20px;
+  color: white;
+}
+.btn-data:hover {
+  background: lawngreen;
+}
