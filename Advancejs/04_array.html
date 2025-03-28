@@ -43,10 +43,16 @@
 
         // 4) forEach data,index
 
-        arr.forEach((data,index,arr)=>{
-            console.log(data)
-            document.write(index," => ",data,"<br>")
-            // console.log(arr)
+        // arr.forEach((data,index,arr)=>{
+        //     console.log(data)
+        //     document.write(index," => ",data,"<br>")
+        //     // console.log(arr)
+        // })
+
+        // 5) map function
+        arr.map((user,index,arr)=>{
+            console.log(index)
+            document.write(index," => ",user,"<br>")
         })
 
     </script>

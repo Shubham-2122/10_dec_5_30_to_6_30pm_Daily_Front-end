@@ -32,6 +32,25 @@
 
         console.log(person.course.full)
         console.log(person.course.front)
+
+        // array in object
+        let arr1 = [1,2,3,4,5,{
+            name : "auyshi",
+            course:"Front-end"
+        },6,7]
+        console.log(arr1)
+        console.log(arr1[5].name)
+
+        // object inner array 
+
+        let person1 = {
+            name : "sayam",
+            age : 24,
+            course : ["Front-end","back-end","Full-stack"]
+        }
+
+        console.log(person1)
+        console.log(person1.course[2])
     </script>
 </body>
 </html>
