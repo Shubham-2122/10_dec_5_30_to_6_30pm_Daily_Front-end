@@ -1,0 +1,52 @@
+Javascript lagu
+
+node js 
+
+framework (alread lib javascript)
+React 
+-> witout reshresh
+-> component base
+-> virutal dom
+--> 2013 facebook
+--> single data binding
+--> class and function data reding
+-> v16 function hooks  
+--> smae engine 
+--> single page application 
+-> fast 
+
+agulare
+--> with
+--> not compo
+--> real dom
+--> 2010 google
+--> data binding doble 
+
+Vue
+->with
+
+-> install node javscript
+--> node -v :- check for cmd
+--> npm :- node package manager
+--> npm -v ;- in cmd
+
+
+npm(node package manager) vs npx(node package ex/e)
+file system
+html 
+
+node :- npm i packagename 
+
+React app install
+-> npx create-react-app app-name
+-> cd app-name
+-> cmd :- npm start 
+
+1) node module 
+-> cmd :- npm install
+2) public folder :- index.html (root),asset(images)
+3) src :- index.js , app.js
+4) package-lock.json,package.json
+
+
+
