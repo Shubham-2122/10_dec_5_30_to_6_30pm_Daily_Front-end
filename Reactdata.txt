@@ -49,4 +49,10 @@ React app install
 4) package-lock.json,package.json
 
 
+vite install react
+
+cmd :- npm create vite@latest my-react-app --template
+
+cmd :- npm run dev
+
 
