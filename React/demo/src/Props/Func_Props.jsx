@@ -1,5 +1,6 @@
 // props ;- One component To another compoennt
 // props read only
+// props as object
 
 import React from 'react'
 
