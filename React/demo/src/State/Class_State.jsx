@@ -1,7 +1,7 @@
 // state :- we can change / modify data 
 // data same file chage 
 // state this.state = {}
-// this.setstate :- inbuilt 
+// this.setstate :- inbuilt method , function
 // constr supr 
 // data modfiy/ chnage
 
