@@ -5,6 +5,10 @@ import Hello from "./Jsx/Hello";
 import Css from "./Css/Css";
 import Main_compo from "./Props/Main_compo";
 import Main_state from "./State/Main_state";
+import Form from "./form_hadling/Form";
+import Form2 from "./form_hadling/Form2";
+import UseEffect from "./useEffect/UseEffect";
+import User from "./useEffect/User";
 
 function App() {
   return (
@@ -24,8 +28,18 @@ function App() {
       {/*  props */}
       {/* <Main_compo /> */}
 
-    {/* state */}
-    <Main_state />
+      {/* state */}
+      {/* <Main_state /> */}
+
+    {/* form hadling */}
+      {/* <Form /> */}
+      {/* <Form2 /> */}
+
+
+      {/* api load  ;- useEffect */}
+      {/* <UseEffect /> */}
+      <User />
+      
     </div>
   )
 }

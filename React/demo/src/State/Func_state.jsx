@@ -20,7 +20,7 @@ function Func_state() {
 
     console.log(name)
 
-    // resuse
+    // resuse //recode
     const changename=()=>{
         setname("Tops data")
     }
