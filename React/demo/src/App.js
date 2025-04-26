@@ -9,6 +9,8 @@ import Form from "./form_hadling/Form";
 import Form2 from "./form_hadling/Form2";
 import UseEffect from "./useEffect/UseEffect";
 import User from "./useEffect/User";
+import Userdata from "./useEffect/Userdata";
+import Card from "./useEffect/Card";
 
 function App() {
   return (
@@ -38,8 +40,10 @@ function App() {
 
       {/* api load  ;- useEffect */}
       {/* <UseEffect /> */}
-      <User />
-      
+      {/* <User /> */}
+      {/* <Userdata /> */}
+      <Card />
+
     </div>
   )
 }
