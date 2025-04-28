@@ -11,6 +11,10 @@ import UseEffect from "./useEffect/UseEffect";
 import User from "./useEffect/User";
 import Userdata from "./useEffect/Userdata";
 import Card from "./useEffect/Card";
+import Cardreac from "./Bootstrap/Cardreac";
+import Header from "./Bootstrap/Header";
+import Footer from "./Bootstrap/Footer";
+import Login from "./Bootstrap/Login";
 
 function App() {
   return (
@@ -42,8 +46,11 @@ function App() {
       {/* <UseEffect /> */}
       {/* <User /> */}
       {/* <Userdata /> */}
-      <Card />
-
+      {/* <Card /> */}
+      {/* <Cardreac /> */}
+      {/* <Header /> */}
+      {/* <Footer /> */}
+    <Login />
     </div>
   )
 }
