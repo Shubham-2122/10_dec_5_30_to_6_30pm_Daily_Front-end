@@ -15,6 +15,9 @@ import Cardreac from "./Bootstrap/Cardreac";
 import Header from "./Bootstrap/Header";
 import Footer from "./Bootstrap/Footer";
 import Login from "./Bootstrap/Login";
+import LifeCycle from "./LifeCycle/LifeCycle";
+import Func_life from "./LifeCycle/Func_life";
+import Usedata from "./hooks/Usedata";
 
 function App() {
   return (
@@ -37,7 +40,7 @@ function App() {
       {/* state */}
       {/* <Main_state /> */}
 
-    {/* form hadling */}
+      {/* form hadling */}
       {/* <Form /> */}
       {/* <Form2 /> */}
 
@@ -50,7 +53,10 @@ function App() {
       {/* <Cardreac /> */}
       {/* <Header /> */}
       {/* <Footer /> */}
-    <Login />
+      {/* <Login /> */}
+      {/* <LifeCycle /> */}
+      {/* <Func_life /> */}
+      <Usedata />
     </div>
   )
 }
