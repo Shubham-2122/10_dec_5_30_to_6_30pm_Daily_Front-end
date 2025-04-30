@@ -18,6 +18,7 @@ import Login from "./Bootstrap/Login";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import Func_life from "./LifeCycle/Func_life";
 import Usedata from "./hooks/Usedata";
+import Drilling from "./UseContext/Drilling";
 
 function App() {
   return (
@@ -56,7 +57,8 @@ function App() {
       {/* <Login /> */}
       {/* <LifeCycle /> */}
       {/* <Func_life /> */}
-      <Usedata />
+      {/* <Usedata /> */}
+      <Drilling />
     </div>
   )
 }
