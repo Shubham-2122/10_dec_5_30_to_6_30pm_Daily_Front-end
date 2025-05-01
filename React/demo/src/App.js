@@ -19,11 +19,17 @@ import LifeCycle from "./LifeCycle/LifeCycle";
 import Func_life from "./LifeCycle/Func_life";
 import Usedata from "./hooks/Usedata";
 import Drilling from "./UseContext/Drilling";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Layout/Pages/Home";
+import About from "./Layout/Pages/About";
+import Contact from "./Layout/Pages/Contact";
+import Help from "./Layout/Pages/Help";
 
 function App() {
   return (
+    <BrowserRouter>
     <div>
-      <h1>Hell this App data</h1>
+      {/* <h1>Hell this App data</h1> */}
 
       {/* componen */}
       {/* <Class_compo /> */}
@@ -58,8 +64,19 @@ function App() {
       {/* <LifeCycle /> */}
       {/* <Func_life /> */}
       {/* <Usedata /> */}
-      <Drilling />
+      {/* <Drilling /> */}
+
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} >
+            
+              
+            </Route>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/help" element={<Help />} />
+        </Routes>
     </div>
+    </BrowserRouter>
   )
 }
 
