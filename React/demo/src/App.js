@@ -27,6 +27,7 @@ import Help from "./Layout/Pages/Help";
 import About1 from "./Layout/Pages/About1";
 import About2 from "./Layout/Pages/About2";
 import Not from "./Layout/Pages/Not";
+import UseRef from "./hooks/UseRef";
 
 function App() {
   return (
@@ -79,6 +80,7 @@ function App() {
             </Route>
             <Route path="/contact" element={<Contact />} />
             <Route path="/help" element={<Help />} />
+            <Route path="/useref" element={<UseRef />} />
 
             <Route path="*" element={<Not />} />
         </Routes>
