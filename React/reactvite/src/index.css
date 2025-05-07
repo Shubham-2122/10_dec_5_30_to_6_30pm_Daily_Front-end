@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+/* base just custom css apply only apply tag */
+@layer base{
+    h2{
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    p{}
+}

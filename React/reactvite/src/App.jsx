@@ -3,6 +3,8 @@ import Space from "./Data/Space"
 import Data from "./Data/Data"
 import Border from "./Data/Border"
 import Background from "./Data/Background"
+import Flex from "./Data/Flex"
+import VIew from "./Data/VIew"
 
 function App() {
 
@@ -31,7 +33,9 @@ function App() {
 
         {/* <Data /> */}
         {/* <Border /> */}
-        <Background />
+        {/* <Background /> */}
+        {/* <Flex /> */}
+        <VIew />
     </>
   )
 }
