@@ -5,6 +5,7 @@ import Border from "./Data/Border"
 import Background from "./Data/Background"
 import Flex from "./Data/Flex"
 import VIew from "./Data/VIew"
+import Grid from "./Data/Grid"
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
         {/* <Border /> */}
         {/* <Background /> */}
         {/* <Flex /> */}
-        <VIew />
+        {/* <VIew /> */}
+        <Grid />
     </>
   )
 }
