@@ -1,10 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function Header2({title,name}) {
-    return (
-        <div>
-            <div>
+
+function AHeader({name,title}) {
+  return (
+    <div>
+       <div>
                 {/* Topbar Start */}
                 <div className="container-fluid bg-primary px-5 d-none d-lg-block">
                     <div className="row gx-0">
@@ -39,7 +40,7 @@ function Header2({title,name}) {
                 {/* Navbar & Hero Start */}
                 <div className="container-fluid position-relative p-0">
                     <nav className="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                        <NavLink to="/" className="navbar-brand p-0">
+                        <NavLink to="/dash" className="navbar-brand p-0">
                             <h1 className="m-0"><i className="fa fa-map-marker-alt me-3" />Travela</h1>
                             {/* <img src="img/logo.png" alt="Logo"> */}
                         </NavLink>
@@ -48,11 +49,11 @@ function Header2({title,name}) {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto py-0">
-                                <NavLink to="/" className="nav-item nav-link">Home</NavLink>
+                                <NavLink to="/dash" className="nav-item nav-link">Dashboard</NavLink>
                                 <NavLink to="/about" className="nav-item nav-link ">About</NavLink>
                                 <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
                                 <NavLink to="/pack" className="nav-item nav-link">Packages</NavLink>
-                                <NavLink to="/blog" className="nav-item nav-link">Blog</NavLink>
+                                <NavLink to="/blogmanage" className="nav-item nav-link">Blog</NavLink>
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div className="dropdown-menu m-0">
@@ -84,9 +85,8 @@ function Header2({title,name}) {
                 </div>
                 {/* Header End */}
             </div>
-
-        </div>
-    )
+    </div>
+  )
 }
 
-export default Header2
+export default AHeader

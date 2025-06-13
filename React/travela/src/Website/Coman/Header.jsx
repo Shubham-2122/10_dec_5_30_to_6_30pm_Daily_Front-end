@@ -26,14 +26,14 @@ function Header() {
                                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div className="dropdown-menu m-0">
                                         <NavLink to="/destination" className="dropdown-item">Destination</NavLink>
-                                        <a href="tour.html" className="dropdown-item">Explore Tour</a>
-                                        <a href="booking.html" className="dropdown-item">Travel Booking</a>
-                                        <a href="gallery.html" className="dropdown-item">Our Gallery</a>
-                                        <a href="guides.html" className="dropdown-item">Travel Guides</a>
-                                        <a href="testimonial.html" className="dropdown-item">Testimonial</a>
+                                        <NavLink to="/tour" className="dropdown-item">Explore Tour</NavLink>
+                                        <NavLink to="/booking" className="dropdown-item">Travel Booking</NavLink>
+                                        <NavLink to="/gallery" className="dropdown-item">Our Gallery</NavLink>
+                                        <NavLink to="/guide" className="dropdown-item">Travel Guides</NavLink>
+                                        <NavLink to="/testi" className="dropdown-item">Testimonial</NavLink>
                                     </div>
                                 </div>
-                                <a href="contact.html" className="nav-item nav-link">Contact</a>
+                                <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
                             </div>
                             <a href className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
                         </div>

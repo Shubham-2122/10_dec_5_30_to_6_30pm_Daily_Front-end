@@ -5,7 +5,7 @@ import Footer from '../Coman/Footer'
 function Package() {
     return (
         <div>
-            <Header2 />
+            <Header2 title="Travel Packages" name="Packages" />
             <div>
                 {/* Packages Start */}
                 <div className="container-fluid packages py-5">

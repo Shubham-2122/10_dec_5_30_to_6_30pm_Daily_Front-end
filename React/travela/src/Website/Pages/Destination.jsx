@@ -5,7 +5,7 @@ import Header2 from '../Coman/Header2'
 function Destination() {
     return (
         <div>
-            <Header2 />
+            <Header2 title="Travel Destination" name="Destination" />
             <div>
                 {/* Destination Start */}
                 <div className="container-fluid destination py-5">

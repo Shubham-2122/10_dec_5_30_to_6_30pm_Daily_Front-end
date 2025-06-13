@@ -5,7 +5,7 @@ import Footer from '../Coman/Footer'
 function Blog() {
     return (
         <div>
-            <Header2 />
+            <Header2 title="Our Blog" name="Blog" />
             <div>
                 {/* Blog Start */}
                 <div className="container-fluid blog py-5">

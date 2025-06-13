@@ -5,7 +5,7 @@ import Footer from '../Coman/Footer'
 function Services() {
     return (
         <div>
-            <Header2 />
+            <Header2 title="Our Services" name="Services" />
             <div>
                 {/* Services Start */}
                 <div className="container-fluid bg-light service py-5">
