@@ -50,7 +50,7 @@ function AHeader({name,title}) {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto py-0">
                                 <NavLink to="/dash" className="nav-item nav-link">Dashboard</NavLink>
-                                <NavLink to="/about" className="nav-item nav-link ">About</NavLink>
+                                <NavLink to="/guidemanage" className="nav-item nav-link ">About</NavLink>
                                 <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
                                 <NavLink to="/pack" className="nav-item nav-link">Packages</NavLink>
                                 <NavLink to="/blogmanage" className="nav-item nav-link">Blog</NavLink>
@@ -61,7 +61,7 @@ function AHeader({name,title}) {
                                         <NavLink to="/tour" className="dropdown-item">Explore Tour</NavLink>
                                         <NavLink to="/booking" className="dropdown-item">Travel Booking</NavLink>
                                         <NavLink to="/gallery" className="dropdown-item">Our Gallery</NavLink>
-                                          <NavLink to="/guide" className="dropdown-item">Travel Guides</NavLink>
+                                          <NavLink to="/guidemanage" className="dropdown-item">Travel Guides</NavLink>
                                         <NavLink to="/testi" className="dropdown-item">Testimonial</NavLink>
                                     </div>
                                 </div>

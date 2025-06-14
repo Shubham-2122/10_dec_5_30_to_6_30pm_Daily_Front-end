@@ -2,49 +2,47 @@ import React, { useEffect, useState } from 'react'
 import AHeader from '../Acoman/AHeader'
 import axios from 'axios'
 
-function Blogmanage() {
+function Guidsmange() {
 
-    const [blogs, setblogs] = useState([])
+    const [guide,setguide] = useState([])
 
-    useEffect(() => {
+    useEffect(()=>{
         fetchdata()
-    }, [])
+    },[])
 
-    const fetchdata = async () => {
-        const res = await axios.get("http://localhost:3000/blogs")
-        // console.log(res.data)
-        setblogs(res.data)
+    const fetchdata=async()=>{
+        const res = await axios.get("http://localhost:3000/guies")
+        console.log(res.data)
+        setguide(res.data)
     }
 
     return (
         <div>
-            <AHeader title="Blog manage" name="Blogs" />
-           
-            <div classname="container">
-                 <h1 className='text-center'>hello this Blog Page</h1>
+            <AHeader title="Guide Manage" name="Guide" />
+            <div className="container">
+                <h1 className='text-center'>hello this Guid Page</h1>
                 <table className="table">
                     <thead>
                         <tr className='text-center'>
                             <th scope="col">#id</th>
                             <th scope="col">name</th>
-                            <th scope="col">posted</th>
-                            <th scope="col">desc</th>
-                            <th scope='col'>date</th>
+                            <th scope="col">Designation</th>
+                            <th scope="col">Images</th>
                             <th scope='col'>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            // console.log(blogs)
-                            blogs && blogs.map((data,index) => {
+                            guide && guide.map((data,index) => {
                                 console.log(data)
                                 return (
                                     <tr className='text-center' key={index}>
                                         <th scope="row">{data.id}</th>
                                         <td>{data.name}</td>
-                                        <td>{data.posted}</td>
-                                        <td>{data.desc}</td>
-                                        <td>{data.date}</td>
+                                        <td>{data.Designation}</td>
+                                        <td>
+                                            <img src={data.img} style={{height:"50px",width:"50px"}} alt="" />
+                                        </td>
                                         <td>
                                             <button className='btn btn-primary'>View</button>
                                             <button className='btn btn-success mx-2'>Edit</button>
@@ -59,9 +57,8 @@ function Blogmanage() {
                     </tbody>
                 </table>
             </div>
-
         </div>
     )
 }
 
-export default Blogmanage
+export default Guidsmange

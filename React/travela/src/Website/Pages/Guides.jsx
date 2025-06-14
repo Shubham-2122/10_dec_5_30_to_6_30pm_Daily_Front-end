@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header2 from '../Coman/Header2'
 import Footer from '../Coman/Footer'
+import axios from 'axios'
 
 function Guides() {
+
+    const [guide, setguide] = useState([])
+
+    useEffect(() => {
+        fetchdata()
+    }, [])
+
+    const fetchdata = async () => {
+        const res = await axios.get("http://localhost:3000/guies")
+        console.log(res.data)
+        setguide(res.data)
+    }
+
     return (
         <div>
             <Header2 title="Our Travel Guides" name="Guides" />
@@ -15,90 +29,33 @@ function Guides() {
                             <h1 className="mb-0">Meet Our Guide</h1>
                         </div>
                         <div className="row g-4">
-                            <div className="col-md-6 col-lg-3">
-                                <div className="guide-item">
-                                    <div className="guide-img">
-                                        <div className="guide-img-efects">
-                                            <img src="img/guide-1.jpg" className="img-fluid w-100 rounded-top" alt="Image" />
+                               {
+                                guide && guide.map((data) => {
+                                    return (
+                                        <div className="col-md-6 col-lg-3">
+                                            <div className="guide-item">
+                                                <div className="guide-img">
+                                                    <div className="guide-img-efects">
+                                                        <img src={data.img} style={{height:"250px"}} className="img-fluid w-100 rounded-top" alt="Image" />
+                                                    </div>
+                                                    <div className="guide-icon rounded-pill p-2">
+                                                        <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-facebook-f" /></a>
+                                                        <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-twitter" /></a>
+                                                        <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-instagram" /></a>
+                                                        <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-linkedin-in" /></a>
+                                                    </div>
+                                                </div>
+                                                <div className="guide-title text-center rounded-bottom p-4">
+                                                    <div className="guide-title-inner">
+                                                        <h4 className="mt-3">{data.name}</h4>
+                                                        <p className="mb-0">{data.Designation}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="guide-icon rounded-pill p-2">
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-facebook-f" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-twitter" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-instagram" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-linkedin-in" /></a>
-                                        </div>
-                                    </div>
-                                    <div className="guide-title text-center rounded-bottom p-4">
-                                        <div className="guide-title-inner">
-                                            <h4 className="mt-3">Full Name</h4>
-                                            <p className="mb-0">Designation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="guide-item">
-                                    <div className="guide-img">
-                                        <div className="guide-img-efects">
-                                            <img src="img/guide-2.jpg" className="img-fluid w-100 rounded-top" alt="Image" />
-                                        </div>
-                                        <div className="guide-icon rounded-pill p-2">
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-facebook-f" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-twitter" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-instagram" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-linkedin-in" /></a>
-                                        </div>
-                                    </div>
-                                    <div className="guide-title text-center rounded-bottom p-4">
-                                        <div className="guide-title-inner">
-                                            <h4 className="mt-3">Full Name</h4>
-                                            <p className="mb-0">Designation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="guide-item">
-                                    <div className="guide-img">
-                                        <div className="guide-img-efects">
-                                            <img src="img/guide-3.jpg" className="img-fluid w-100 rounded-top" alt="Image" />
-                                        </div>
-                                        <div className="guide-icon rounded-pill p-2">
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-facebook-f" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-twitter" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-instagram" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-linkedin-in" /></a>
-                                        </div>
-                                    </div>
-                                    <div className="guide-title text-center rounded-bottom p-4">
-                                        <div className="guide-title-inner">
-                                            <h4 className="mt-3">Full Name</h4>
-                                            <p className="mb-0">Designation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6 col-lg-3">
-                                <div className="guide-item">
-                                    <div className="guide-img">
-                                        <div className="guide-img-efects">
-                                            <img src="img/guide-4.jpg" className="img-fluid w-100 rounded-top" alt="Image" />
-                                        </div>
-                                        <div className="guide-icon rounded-pill p-2">
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-facebook-f" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-twitter" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-instagram" /></a>
-                                            <a className="btn btn-square btn-primary rounded-circle mx-1" href><i className="fab fa-linkedin-in" /></a>
-                                        </div>
-                                    </div>
-                                    <div className="guide-title text-center rounded-bottom p-4">
-                                        <div className="guide-title-inner">
-                                            <h4 className="mt-3">Full Name</h4>
-                                            <p className="mb-0">Designation</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>

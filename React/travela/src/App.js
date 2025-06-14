@@ -15,6 +15,7 @@ import Testimonial from "./Website/Pages/Testimonial";
 import Guides from "./Website/Pages/Guides";
 import Dashboard from "./Admin/Apages/Dashboard";
 import Blogmanage from "./Admin/Apages/Blogmanage";
+import Guidsmange from "./Admin/Apages/Guidsmange";
 
 function App() {
   return (
@@ -41,7 +42,7 @@ function App() {
         {/* Admin */}
         <Route path="/dash" element={<Dashboard />} />
         <Route path="/blogmanage" element={<Blogmanage />} />
-
+        <Route path="/guidemanage" element={<Guidsmange />} />
       </Routes>
     </div>
     </BrowserRouter>
