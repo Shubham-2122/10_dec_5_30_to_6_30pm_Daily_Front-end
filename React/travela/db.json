@@ -1,65 +1,81 @@
 {
-    "blogs":[
-        {
-            "id":1,
-            "name":"Adventures Trip",
-            "posted":"Royal Hamblin",
-            "desc":"Hello Adventures park...",
-            "date":"28-01-2023",
-            "img":"https://images.pexels.com/photos/28367460/pexels-photo-28367460/free-photo-of-the-road-to-jasper.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
-            "id":2,
-            "name":"Adventures Trip 2",
-            "posted":"Royal Data",
-            "desc":"Hello Adventures park 2...",
-            "date":"30-04-2023",
-            "img":"https://images.pexels.com/photos/31027069/pexels-photo-31027069/free-photo-of-colorful-longtail-boats-in-bangkok-canal.jpeg?auto=compress&cs=tinysrgb&w=600"
-        }
-    ],
-    "guies":[
-        {
-            "id":1,
-            "name":"Het patel",
-            "Designation":"tour guies",
-            "img":"https://images.pexels.com/photos/15885734/pexels-photo-15885734/free-photo-of-snowy-hikes-in-waterton-lakes-national-park.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-         {
-            "id":2,
-            "name":"varj patel",
-            "Designation":"tour for park",
-            "img":"https://images.pexels.com/photos/7348529/pexels-photo-7348529.jpeg?auto=compress&cs=tinysrgb&w=600"
-        }
-    ],
-    "admin": [
-        {
-            "id": 1,
-            "name": "admin",
-            "email": "admin@gmail.com",
-            "password": "1234"
-        }
-    ],
-    "user": [
-        {
-            "id": 1,
-            "name": "user1",
-            "email": "user1@gmail.com",
-            "password": "123456",
-            "status": "unblock"
-        },
-        {
-            "id": 2,
-            "name": "user2",
-            "email": "user2@gmail.com",
-            "password": "1234",
-            "status": "unblock"
-        },
-        {
-            "id": 3,
-            "name": "user3",
-            "email": "user3@gmail.com",
-            "password": "123456",
-            "status": "block"
-        }
-    ]
+  "blogs": [
+    {
+      "id": "1",
+      "name": "Adventures Trip",
+      "posted": "Royal Hamblin",
+      "desc": "Hello Adventures park...",
+      "date": "28-01-2023",
+      "img": "https://images.pexels.com/photos/28367460/pexels-photo-28367460/free-photo-of-the-road-to-jasper.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "2",
+      "name": "Adventures Trip 2",
+      "posted": "Royal Data",
+      "desc": "Hello Adventures park 2...",
+      "date": "30-04-2023",
+      "img": "https://images.pexels.com/photos/31027069/pexels-photo-31027069/free-photo-of-colorful-longtail-boats-in-bangkok-canal.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "1750079838283",
+      "name": "hill station",
+      "posted": "het patel",
+      "desc": "Hello this hill station tarveling....",
+      "date": "2025-06-20",
+      "img": "https://images.pexels.com/photos/32304900/pexels-photo-32304900/free-photo-of-scenic-view-of-cape-town-s-twelve-apostles.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    },
+    {
+      "id": "1750080338144",
+      "name": "trip name",
+      "posted": "varj patel",
+      "desc": "sdfsa fsa fdsa fadr sad as",
+      "date": "2025-06-13",
+      "img": "https://images.pexels.com/photos/32419253/pexels-photo-32419253/free-photo-of-elegant-parisian-building-along-the-seine.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+    }
+  ],
+  "guies": [
+    {
+      "id": "1",
+      "name": "Het patel",
+      "Designation": "tour guies",
+      "img": "https://images.pexels.com/photos/15885734/pexels-photo-15885734/free-photo-of-snowy-hikes-in-waterton-lakes-national-park.jpeg?auto=compress&cs=tinysrgb&w=600"
+    },
+    {
+      "id": "2",
+      "name": "varj patel",
+      "Designation": "tour for park",
+      "img": "https://images.pexels.com/photos/7348529/pexels-photo-7348529.jpeg?auto=compress&cs=tinysrgb&w=600"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123456",
+      "status": "block"
+    }
+  ]
 }

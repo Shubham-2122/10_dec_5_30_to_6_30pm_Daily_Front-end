@@ -53,7 +53,13 @@ function AHeader({name,title}) {
                                 <NavLink to="/guidemanage" className="nav-item nav-link ">About</NavLink>
                                 <NavLink to="/service" className="nav-item nav-link">Services</NavLink>
                                 <NavLink to="/pack" className="nav-item nav-link">Packages</NavLink>
-                                <NavLink to="/blogmanage" className="nav-item nav-link">Blog</NavLink>
+                                 <div className="nav-item dropdown">
+                                    <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blogs</a>
+                                    <div className="dropdown-menu m-0">
+                                        <NavLink to="/blogmanage" className="dropdown-item">blog Manage</NavLink>
+                                        <NavLink to="/blogadd" className="dropdown-item">blog Add</NavLink>
+                                    </div>
+                                </div>
                                 <div className="nav-item dropdown">
                                     <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div className="dropdown-menu m-0">

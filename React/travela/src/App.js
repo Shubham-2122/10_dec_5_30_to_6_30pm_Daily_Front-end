@@ -16,6 +16,7 @@ import Guides from "./Website/Pages/Guides";
 import Dashboard from "./Admin/Apages/Dashboard";
 import Blogmanage from "./Admin/Apages/Blogmanage";
 import Guidsmange from "./Admin/Apages/Guidsmange";
+import BlogsAdd from "./Admin/Apages/BlogsAdd";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/dash" element={<Dashboard />} />
         <Route path="/blogmanage" element={<Blogmanage />} />
         <Route path="/guidemanage" element={<Guidsmange />} />
+         <Route path="/blogadd" element={<BlogsAdd />} />
       </Routes>
     </div>
     </BrowserRouter>
