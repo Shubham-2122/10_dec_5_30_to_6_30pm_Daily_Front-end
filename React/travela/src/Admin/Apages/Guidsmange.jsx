@@ -37,6 +37,8 @@ function Guidsmange() {
         setblogdata(res.data)
     }
 
+    
+
     return (
         <div>
             <AHeader title="Guide Manage" name="Guide" />
