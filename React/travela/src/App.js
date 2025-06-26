@@ -17,11 +17,18 @@ import Dashboard from "./Admin/Apages/Dashboard";
 import Blogmanage from "./Admin/Apages/Blogmanage";
 import Guidsmange from "./Admin/Apages/Guidsmange";
 import BlogsAdd from "./Admin/Apages/BlogsAdd";
+import Alogin from "./Admin/Apages/Alogin";
+import { ToastContainer, toast } from 'react-toastify';
+import Login from "./Website/Pages/Login";
+import Register from "./Website/Pages/Register";
+import Editprofile from "./Website/Pages/Editprofile";
 
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      <ToastContainer />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -35,6 +42,10 @@ function App() {
         <Route path="/tour" element={<Tour />} />
         <Route path="/testi" element={<Testimonial />} />
         <Route path="/guide" element={<Guides />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/New" element={<Register />} />
+        <Route path="/edit" element={<Editprofile />} />
+
 
         {/* Not found */}
         <Route path="*" element={<NotFound />} />
@@ -45,6 +56,7 @@ function App() {
         <Route path="/blogmanage" element={<Blogmanage />} />
         <Route path="/guidemanage" element={<Guidsmange />} />
          <Route path="/blogadd" element={<BlogsAdd />} />
+         <Route path="/alogin" element={<Alogin />} />
       </Routes>
     </div>
     </BrowserRouter>

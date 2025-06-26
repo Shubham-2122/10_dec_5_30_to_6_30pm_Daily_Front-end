@@ -1,9 +1,26 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 
 function AHeader({name,title}) {
-  return (
+  
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/alogin")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/alogin")
+        toast.success("Admin logout Successs..")
+    }
+
+    return (
     <div>
        <div>
                 {/* Topbar Start */}
@@ -23,7 +40,15 @@ function AHeader({name,title}) {
                                 <a href="#"><small className="me-3 text-light"><i className="fa fa-user me-2" />Register</small></a>
                                 <a href="#"><small className="me-3 text-light"><i className="fa fa-sign-in-alt me-2" />Login</small></a>
                                 <div className="dropdown">
-                                    <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> My Dashboard</small></a>
+                                   {
+                                    (()=>{
+                                        if(localStorage.getItem("Aid")){
+                                            return(
+                                                 <a href="#" className="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i className="fa fa-home me-2" /> Hello {localStorage.getItem("Aname")}</small></a>
+                                            )
+                                        }
+                                    })()
+                                   }
                                     <div className="dropdown-menu rounded">
                                         <a href="#" className="dropdown-item"><i className="fas fa-user-alt me-2" /> My Profile</a>
                                         <a href="#" className="dropdown-item"><i className="fas fa-comment-alt me-2" /> Inbox</a>
@@ -71,9 +96,27 @@ function AHeader({name,title}) {
                                         <NavLink to="/testi" className="dropdown-item">Testimonial</NavLink>
                                     </div>
                                 </div>
-                                 <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+                              
+                                 {
+                                    (()=>{
+                                        if(localStorage.getItem("Aid")){
+                                            return(
+                                                <>
+                                                 <Link onClick={logout} className="nav-item nav-link">Alogout</Link>
+                                                </>
+                                            )
+                                        }
+                                        else{
+                                            return(
+                                                <>
+                                                 <NavLink to="/alogin" className="nav-item nav-link">Alogin</NavLink>
+                                                </>
+                                            )
+                                        }
+                                    })()
+                                 }
                             </div>
-                            <a href className="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+                           
                         </div>
                     </nav>
                 </div>
